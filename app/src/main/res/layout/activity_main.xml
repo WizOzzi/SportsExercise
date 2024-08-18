@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- res/layout/activity_main.xml -->
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinner_exercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Choose exercise" />
+
+    <EditText
+        android:id="@+id/editText_reps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repetitions"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight(kg)"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Exercise" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Exercises" />
+
+    <Button
+        android:id="@+id/button_add_exercise_type"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:text="Add Exercise Type" />
+
+    <Button
+        android:id="@+id/buttonDeleteExerciseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:insetTop="6dp"
+        android:text="Delete Exercise Type" />
+</LinearLayout>
+-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinner_exercise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Choose exercise"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_reps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Repetitions"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/spinner_exercise"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/editText_weight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/editText_reps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/editText_weight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save Exercise"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/editText_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Exercises"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/button_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_add_exercise_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Add Exercise Type"
+        android:textSize="12sp"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonDeleteExerciseType"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDeleteExerciseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete Exercise Type"
+        android:textColor="#F8F8F8"
+        android:textSize="12sp"
+        app:backgroundTint="#E84949"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_add_exercise_type" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
